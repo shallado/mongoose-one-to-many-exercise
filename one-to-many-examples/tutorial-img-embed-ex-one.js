@@ -26,6 +26,7 @@ async function execute() {
 
   tutorial.uploadImage(id, imageInfoTwo);
 
+  tutorial.find(id);
 }
 
 execute();
