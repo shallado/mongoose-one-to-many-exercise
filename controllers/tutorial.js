@@ -7,11 +7,17 @@ exports.createTutorial = (tutorialInfo) => {
 };
 
 exports.uploadImage = (tutorialId, image) => {
-  Tutorial.findByIdAndUpdate(
+  return Tutorial.findByIdAndUpdate(
     tutorialId, 
     { $push: { images: image } }, 
     { new: true }
   )
-    .then((customer) => console.log(customer))
+    .then((customer) => customer)
     .catch((err) => console.log(err));
 };
+
+exports.find = (id) => {
+  Tutorial.findById(id)
+    .then((tutorial) => console.log(tutorial))
+    .catch((err) => console.log(err));
+}
