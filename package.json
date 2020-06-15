@@ -1,0 +1,14 @@
+{
+  "name": "mongoose-one-to-many-exercise",
+  "version": "1.0.0",
+  "description": "one to many relationship using mongoose",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "shallado",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
