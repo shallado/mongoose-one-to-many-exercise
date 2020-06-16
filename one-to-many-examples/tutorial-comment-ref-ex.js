@@ -1,6 +1,8 @@
 const comment = require('../controllers/comment');
 const tutorial = require('../controllers/tutorial');
 
+// example of one-to-many tutorials have many comments
+// ref methods is used here
 async function execute() {
   const tutorialInfo = {
     title: 'Star Wars',
@@ -21,7 +23,7 @@ async function execute() {
   tutorial.addComment(tutorialOne._id, commentOne._id);
   tutorial.addComment(tutorialOne._id, commentTwo._id);
 
-  tutorial.findAndPopulate(tutorialOne._id);
+  tutorial.findAndPopulateComments(tutorialOne._id);
 }
 
 execute();

@@ -6,6 +6,8 @@ const tutorialInfo = {
   author: 'George Lucas'
 };
 
+// one-to-many relationship tutorial can have many images
+// embedded docs method
 async function exec() {
   const imageInfoOne = {
     path: 'sites/uploads/images/mongodb.png',

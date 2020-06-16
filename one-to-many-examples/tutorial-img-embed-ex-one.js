@@ -5,6 +5,9 @@ const tutorialInfo = {
   author: 'George Lucas' 
 };
 
+
+// one-to-many relationship tutorial can have many images
+// embedded docs method
 async function execute() {
   const tutorialOne = await tutorial.createTutorial(tutorialInfo);
   const id = tutorialOne._id;

@@ -6,7 +6,8 @@ const Tutorial = (mongoose) => {
     comments: [{
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Comment'
-    }]
+    }],
+    category: mongoose.Schema.Types.ObjectId
   });
 
   return mongoose.model('Tutorial', tutorialSchema);
